@@ -1,23 +1,12 @@
-# Bilim İnsanları ve Mühendisler için Diferansiyel Denklemler
+# Diferansiyel Denklemler
 
-> **Adi ve Kısmi Diferansiyel Denklemler üzerine araştırma düzeyinde, 8 haftalık bir ustalık kursu — ilk ilkelerden modern makine öğrenmesi uygulamalarına.**
-> Sembolik çözücü yok. Kara kutu kütüphane yok. Saf matematik, NumPy ve SciPy.
+Bu depo, diferansiyel denklemlerin sayısal çözümünü temel teoriden ileri uygulamalara taşıyan, kendi kendine yeten bir öğretim materyali bütünüdür. Amacı, hazır çözücülerin örtük kalan iç işleyişini görünür kılmak ve her yöntemi hem matematiksel olarak gerekçelendirmek hem de bilgisayar üzerinde sıfırdan inşa etmektir.
 
----
+Çalışmanın temelinde üç ilke yer alır. Birincisi, *türetmenin önceliği*: her sayısal şema, kodlanmadan önce sürekli problemden adım adım türetilir; böylece formüllerin nereden geldiği ve hangi varsayımlara dayandığı açıkça izlenebilir. İkincisi, *doğrulanabilirlik*: her uygulama, bilinen bir analitik çözüme, bir referans yönteme ya da yakınsama mertebesinin deneysel ölçümüne karşı sınanır; doğruluk iddiası daima sayısal kanıtla desteklenir. Üçüncüsü, *şeffaflık*: hesaplama, dışarıdan getirilen genel amaçlı entegratörlere değil, okunabilir ve incelenebilir kaynak koda dayanır.
 
-## Genel Bakış
+Klasik adi diferansiyel denklem teorisinden başlayıp tek ve çok adımlı zaman integrasyon yöntemleri, katı sistemler ve sınır değer problemleri, spektral analiz ve dönüşüm teknikleri üzerinden ilerleyerek; ısı, dalga ve eliptik denklemler ile doğrusal olmayan korunum yasalarını kapsar. Son bölüm, diferansiyel denklemler ile derin öğrenmenin kesişimini —eşlenik duyarlılık yöntemi, Sinirsel ADD'ler ve Fizik-Bilgili Sinir Ağları (PINN)— ele alarak çağdaş bir bakış sunar.
 
-Bu kurs, klasik teoriyi modern bilimsel hesaplama ve makine öğrenmesiyle birleştirerek diferansiyel denklemlerin eksiksiz bir anlayışını sıfırdan kurar. Her hafta; titiz türetmeler, elle yazılmış sayısal uygulamalar ve zengin görselleştirmelerle dolu, kendi içinde bütün bir Jupyter Notebook'tur.
-
-Sonunda şunları türetmiş, uygulamış ve sınamış olacaksınız:
-
-- Her büyük **ADD çözücüsü** (Euler, RK4, Adams-Bashforth, BDF, Radau) sıfırdan
-- Özdeğer spektrumları ve faz portreleri yoluyla **kararlılık analizi**
-- Atış yöntemleri ve sonlu farklarla **Sınır Değer Problemleri**
-- Elle yazılmış DFT ve FFT çekirdekleriyle **Fourier Serileri ve Dönüşümleri**
-- Fiziğin kanonik **KDD'leri**: ısı, dalga, Laplace ve Burgers denklemleri
-- **Katı sistemler** ve sayısal patolojileri (katılık oranı, A-kararlılık)
-- NumPy'da sıfırdan **Sinirsel ADD'ler** ve **Fizik-Bilgili Sinir Ağları (PINN)**
+Her hafta, kuramsal arka planı, sıfırdan yazılmış uygulamayı, analitik doğrulamayı, görselleştirmeleri ve okuyucunun kavramları pekiştirmesini sağlayan alıştırmaları bir arada barındıran, bağımsız çalıştırılabilir bir Jupyter Notebook olarak düzenlenmiştir.
 
 ---
 
